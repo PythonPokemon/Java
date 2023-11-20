@@ -10,6 +10,7 @@ public class TierTest {
         löwe.essen();     // Löwe isst
         löwe.schlafen();  // Löwe schläft
         löwe.brüllen();   // Löwe brüllt laut
+        löwe.jagen();
 
         System.out.println("\nAktionen des Elefanten:");
         elefant.essen();      // Elefant isst
@@ -18,7 +19,7 @@ public class TierTest {
     }
 }
 
-// Die Basisklasse "Tier"
+// -------------------------------Tier------------------------------------------
 class Tier {
     // Instanzvariable für den Namen des Tiers
     String name;
@@ -38,9 +39,13 @@ class Tier {
     public void schlafen() {
         System.out.println(name + " schläft.");
     }
+
+    public void jagen(){
+        System.out.println(name + " jagt.");
+    }
 }
 
-// Die abgeleitete Klasse "Löwe", die von "Tier" erbt
+// -----------------------------Löwe--------------------------------------------
 class Löwe extends Tier {
     // Konstruktor für die Löwenklasse
     public Löwe(String name) {
@@ -54,7 +59,7 @@ class Löwe extends Tier {
     }
 }
 
-// Die abgeleitete Klasse "Elefant", die von "Tier" erbt
+// ---------------------------Elefant------------------------------------------
 class Elefant extends Tier {
     // Konstruktor für die Elefantenklasse
     public Elefant(String name) {
