@@ -1,6 +1,6 @@
-package Luftfahrtschiff;
+package Tag06;
 
-public class Luftfahrzeug {
+public abstract class Luftfahrzeug {
 	//Eigenschaften
 	private String bezeichnung;
 	private double gewicht;
@@ -13,6 +13,12 @@ public class Luftfahrzeug {
 		this.gewicht=0.0;
 		this.baujahr=0;
 	}
+	public Luftfahrzeug(String bezeichnung, double gewicht, int baujahr) {
+		this.bezeichnung=bezeichnung;
+		this.gewicht=gewicht;
+		this.baujahr=baujahr;
+	}
+	
 	//Getter-/Setter-Methoden
 	public String getBezeichnung() {
 		return this.bezeichnung;
@@ -33,10 +39,7 @@ public class Luftfahrzeug {
 		this.baujahr=baujahr;
 	}
 	//weitere Methoden
-	public String getDaten() {
-		String daten="Das Luftfahrzeug hat die Bezeichnung "+this.getBezeichnung()+"\n"+
-				"und das Gewicht "+this.getGewicht()+" Tonnen \n"+
-				"und Baujahr: "+this.getBaujahr()+"\n";
-		return daten;
+	public abstract String getDaten() ;
+		
 	}
-}
+
