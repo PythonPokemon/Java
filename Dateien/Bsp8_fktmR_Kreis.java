@@ -20,6 +20,7 @@ public class Bsp8_fktmR_Kreis {
 		Scanner objvar=new Scanner(System.in);
 		System.out.println("Bitte den Radius in cm eingeben: ");
 		float radius = objvar.nextFloat();
+		objvar.close();
 		return radius;
 	}
 	
