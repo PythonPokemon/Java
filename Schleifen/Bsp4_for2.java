@@ -1,4 +1,4 @@
-package Tag04_KSFkt;
+package Schleifen;
 
 public class Bsp4_for2 {
 

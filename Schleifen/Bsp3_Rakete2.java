@@ -1,4 +1,4 @@
-package Tag04_KSFkt;
+package Schleifen;
 
 import java.util.Scanner;
 
