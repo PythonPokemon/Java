@@ -1,4 +1,4 @@
-package Tag04_KSFkt;
+package Dateien;
 
 import java.util.Scanner;
 

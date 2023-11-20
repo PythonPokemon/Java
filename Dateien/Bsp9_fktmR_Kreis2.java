@@ -1,4 +1,4 @@
-package Tag04_KSFkt;
+package Dateien;
 
 import java.util.Scanner;
 
@@ -13,7 +13,7 @@ public class Bsp9_fktmR_Kreis2 {
 		float fläche = kreisflaeche(r);
 		
 		//AUSGABE
-		System.out.println("Die Fläche vom Kreis beträgt "+ fläche+" cm².");		
+		System.out.println("Die Fläche vom Kreis beträgt "+ fläche+" cm².");
 	}
 	
 	public static float eingabe() {
@@ -26,5 +26,5 @@ public class Bsp9_fktmR_Kreis2 {
 	public static float kreisflaeche(float radius) {
 		float A = 3.141f*radius*radius;
 		return A;
-	}	
+	}
 }
