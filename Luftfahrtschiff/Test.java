@@ -1,4 +1,4 @@
-package Tag06_OOP1;
+package Luftfahrtschiff;
 
 public class Test {
 
