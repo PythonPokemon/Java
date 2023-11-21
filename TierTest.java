@@ -1,21 +1,21 @@
 // Die Hauptklasse für den Test
 public class TierTest {
     public static void main(String[] args) {
-        // Erstelle Instanzen von Löwe und Elefant
+// ----------Erstelle Instanzen von Löwe und Elefant----------------------------
         Löwe löwe = new Löwe("Simba");
         Elefant elefant = new Elefant("Dumbo");
 
-        // Gib Aktionen der Tiere auf der Konsole aus
+//----------------gibt Aktionen der Tiere auf der Konsole aus-------------------
         System.out.println("Aktionen des Löwen:");
-        löwe.essen();     // Löwe isst
-        löwe.schlafen();  // Löwe schläft
-        löwe.brüllen();   // Löwe brüllt laut
+        löwe.essen();
+        löwe.schlafen();
+        löwe.brüllen();
         löwe.jagen();
 
         System.out.println("\nAktionen des Elefanten:");
-        elefant.essen();      // Elefant isst
-        elefant.schlafen();   // Elefant schläft
-        elefant.trompeten();  // Elefant trompetet
+        elefant.essen();
+        elefant.schlafen();
+        elefant.trompeten();
     }
 }
 
@@ -26,7 +26,6 @@ class Tier {
 
     // Konstruktor für die Tierklasse
     public Tier(String name) {
-        // Initialisiere den Namen des Tiers mit dem übergebenen Wert
         this.name = name;
     }
 
@@ -49,11 +48,11 @@ class Tier {
 class Löwe extends Tier {
     // Konstruktor für die Löwenklasse
     public Löwe(String name) {
-        // Aufruf des Konstruktors der Elternklasse (Tier) mit dem übergebenen Namen
+        // Vererbung Tier name
         super(name);
     }
 
-    // Spezifische Methode für den Löwen, um anzuzeigen, dass er brüllt
+    // Spezifische Methode für den Löwen
     public void brüllen() {
         System.out.println(name + " brüllt laut.");
     }
@@ -63,11 +62,11 @@ class Löwe extends Tier {
 class Elefant extends Tier {
     // Konstruktor für die Elefantenklasse
     public Elefant(String name) {
-        // Aufruf des Konstruktors der Elternklasse (Tier) mit dem übergebenen Namen
+        // Vererbung Tier name
         super(name);
     }
 
-    // Spezifische Methode für den Elefanten, um anzuzeigen, dass er trompetet
+    // Spezifische Methode für den Elefanten
     public void trompeten() {
         System.out.println(name + " trompetet.");
     }
