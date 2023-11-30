@@ -1,3 +1,4 @@
+package Tag06;
 // Die Hauptklasse für den Test
 public class TierTest {
     public static void main(String[] args) {
